@@ -97,7 +97,7 @@ async function mergePDFs() {
     const mergedPdfBlob = new Blob([mergedPdfBytes], { type: 'application/pdf' });
     const mergedPdfUrl = URL.createObjectURL(mergedPdfBlob);
 
-    // Optionally, you can create a link to download the merged PDF
+    
     const downloadLink = document.createElement('a');
     downloadLink.href = mergedPdfUrl;
     downloadLink.download = `${finalFileName}.pdf`;
