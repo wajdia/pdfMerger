@@ -3,11 +3,14 @@ let selectedIndex = -1;
 
 function updateFileList() {
     const fileList = document.getElementById('fileList');
-    
+    fileList.innerHTML = 'Files to merge:';
+
     selectedFiles.forEach(({ file, inputIndex }, index) => {
-        const listItem = document.createElement('div');
+        const listItem = document.createElement('li');
         listItem.textContent = `${index + 1}. ${file.name}`;
-        
+        if (index === selectedIndex) {
+            listItem.classList.add('selected');
+        }
         fileList.appendChild(listItem);
     });
 }

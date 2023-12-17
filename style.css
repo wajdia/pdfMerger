@@ -10,25 +10,28 @@ body {
     background-color: #f0f0f0;
 }
 
+/*
 .file-input-container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
 }
-
+*/
 
 
 input[type="file"] {
+    color: #2a353d;
     width: 80%;
     margin-bottom: 10px;
 }
 
 #fileList {
+    
     display: flex;
     flex-direction: column;
     gap: 8px;
-    max-width: 300px;
+    
     padding: 10px;
     background-color: #fff;
     border-radius: 8px;
@@ -38,7 +41,7 @@ input[type="file"] {
 .selected {
     background-color: #b3e0ff;
 }
-
+/*
 button {
     background-color: #4caf50;
     color: #fff;
@@ -56,10 +59,14 @@ button.red {
 button:hover {
     background-color: #4649f3;
 }
-
+*/
 input[type="text"] {
     width: 80%;
     padding: 8px;
     margin-bottom: 10px;
     box-sizing: border-box;
+}
+
+.jumbotron{
+    text-align: center;
 }
