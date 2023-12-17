@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Merger</title>
+    <link rel="stylesheet" href = "style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/pdf-lib@1.10.0/dist/pdf-lib.js"></script>
+</head>
+<body>
+    <div class="file-input-container">
+        <div class="file-browse">
+            <input type="file" id="fileInput" multiple onchange="handleFileChange(event, 1)" />
+        </div>
+        <div id="fileList" onclick="selectFile(event)">Files to merge:</div>
+        <input type="text" id="mergedFileName" placeholder="Merged File Name" />
+        <div>
+            <button onclick="moveSelectedFile('up')">Move Up</button>
+            <button onclick="moveSelectedFile('down')">Move Down</button>
+        </div>
+        <button onclick="deleteSelectedFile()" class="red">Delete Selected</button>
+        <button onclick="mergePDFs()">Merge PDFs</button>
+    </div>
+
+    <script src = "mergeApp.js"></script>
+       
+    
+</body>
+</html>
