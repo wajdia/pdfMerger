@@ -6,7 +6,7 @@ function updateFileList() {
     fileList.innerHTML = 'Files to merge:';
 
     selectedFiles.forEach(({ file, inputIndex }, index) => {
-        const listItem = document.createElement('li');
+        const listItem = document.createElement('div');
         listItem.textContent = `${index + 1}. ${file.name}`;
         if (index === selectedIndex) {
             listItem.classList.add('selected');
