@@ -13,6 +13,8 @@ function updateFileList() {
         }
         fileList.appendChild(listItem);
     });
+
+    
 }
 
 function handleFileChange(event, inputIndex) {
