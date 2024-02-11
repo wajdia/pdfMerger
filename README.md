@@ -1,3 +1,4 @@
+Written By: Wajdi Aweida
 You can have a ton of websites that merges your pdf files
 All of them request to upload your files to their servers
 There is a privacy issue in this
